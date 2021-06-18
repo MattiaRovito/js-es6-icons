@@ -40,11 +40,17 @@ main
 }
 
 
-.box
+.icone
 {
     background-color: #f5f5f5;
     width: 200px;
     height: 100px;
     border-radius: 10px;
     box-shadow: 2px 2px 0 0 rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.title
+{
+    font-size: 16px;
 }

@@ -106,21 +106,60 @@ const icons = [
 
 
 
-icons.forEach((element) => {
+// icons.forEach((element) => {
 
-    document.getElementById('icone').innerHTML +=
-    `
-    <div class="box"><i class="${element.family} ${element.prefix}${element.name}"><i><br>
-    ${element.name}</div>
-    `
+//     document.getElementById('icone').innerHTML +=
+//     `
+//     <div class="box"><i class="${element.family} ${element.prefix}${element.name}"><i><br>
+//     ${element.name}</div>
+//     `
     
+//     // console.log(
+//     //     `
+//     //     <i class="${element.family} ${element.prefix}${element.name}"><i>
+//     //     `
+//     // );
+// });
+
+// icons.forEach((element) => {
+
+//     const {name, prefix, family} = element;
 
 
+//     const elementHTML = 
+//     `
+//     <div>
+//         <i class="${family} ${prefix}${name}"><i>
+//         <div class="title">${name.toUpperCase()}</div>
+//     </div>
+//     `;
+    
+//     document.getElementById('icone').innerHTML += elementHTML;
 
-    // console.log(
-    //     `
-    //     <i class="${element.family} ${element.prefix}${element.name}"><i>
-    //     `
-    // );
 
-});
+// });
+
+//! Richiamiamo la funzione 
+print(icons);
+
+
+//! Possiamo mettere tutto in una funzione
+
+function print(array){
+
+    array.forEach((element) => {
+
+        const {name, prefix, family} = element;
+    
+    
+        const elementHTML = 
+        `
+        <div>
+            <i class="${family} ${prefix}${name}"><i>
+            <div class="title">${name.toUpperCase()}</div>
+        </div>
+        `;
+        
+        document.getElementById('icone').innerHTML += elementHTML;
+    });
+}
