@@ -110,7 +110,8 @@ icons.forEach((element) => {
 
     document.getElementById('icone').innerHTML +=
     `
-    <div class="box"><i class="${element.family} ${element.prefix}${element.name}"><i><br></div>
+    <div class="box"><i class="${element.family} ${element.prefix}${element.name}"><i><br>
+    ${element.name}</div>
     `
     
 
