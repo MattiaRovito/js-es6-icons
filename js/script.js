@@ -1,3 +1,10 @@
+//! Milestone 1 Partendo dalla seguente struttura dati, mostriamo in pagina tutte le icone disponibili come da layout.
+
+//! Milestone 2 Coloriamo le icone per tipo.
+
+//! Milestone 3 Creiamo una select con i tipi di icone e usiamola per filtrare le icone.
+
+
 const icons = [
     {
       name: 'cat',
@@ -96,3 +103,23 @@ const icons = [
       family: 'fas',
     },
   ];
+
+
+
+icons.forEach((element) => {
+
+    document.getElementById('icone').innerHTML +=
+    `
+    <div class="box"><i class="${element.family} ${element.prefix}${element.name}"><i><br></div>
+    `
+    
+
+
+
+    // console.log(
+    //     `
+    //     <i class="${element.family} ${element.prefix}${element.name}"><i>
+    //     `
+    // );
+
+});
